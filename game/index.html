@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Gilded Mouse — a midnight gallery heist</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #070b14;
+    min-height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  canvas {
+    display: block;
+    width: min(96vw, 960px);
+    height: auto;
+    background: #0f1420;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+  }
+  .foot {
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .foot b { color: #94a3b8; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<p class="foot"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak &nbsp;·&nbsp; <b>click</b> toss a coin &nbsp;·&nbsp; <b>Space</b> smoke &nbsp;·&nbsp; <b>E</b> EMP &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>M</b> mute</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
